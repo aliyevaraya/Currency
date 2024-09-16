@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unibank</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div>
+        <h3>Valyuta kalkulyatoru</h3>
+        <p>Nağd məzənnə əsasında hesablanır</p>
+      </div>
+      <div id="curr">
+        <div class="curr">
+          <input oninput="getPriceFrom()" id="fromInp" type="number" placeholder="0" />
+          <select onchange="getPriceFrom()" id="from">
+            <option value="AZE">AZE</option>
+          </select>
+        </div>
+        <div class="arrow">🠖</div>
+        <div class="curr">
+          <input oninput="getPriceTo()" id="toInp" type="number" placeholder="0" />
+          <select onchange="getPriceTo()" id="to">
+            <option value="AZE" selected>AZE</option>
+          </select>
+        </div>
+      </div>
+    </main>
+
+    <script src="data.js"></script>
+  </body>
+</html>
